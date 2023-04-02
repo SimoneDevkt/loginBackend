@@ -10,7 +10,8 @@
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "dev": "fastify start -w -l info -P app.js",
+    "build:functions": "netlify-lambda build functions --config ./webpack.config.netlify.js"
   },
   "keywords": [],
   "author": "",
