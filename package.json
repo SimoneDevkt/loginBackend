@@ -10,21 +10,23 @@
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "dev": "fastify start -w -l info -P app.js",
+    "build:functions": "netlify-lambda build functions --config ./webpack.config.netlify.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.0.0",
-    "fastify-plugin": "^4.0.0",
     "@fastify/autoload": "^5.0.0",
+    "@fastify/aws-lambda": "^3.2.0",
     "@fastify/sensible": "^5.0.0",
-    "fastify-cli": "^5.7.1"
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.7.1",
+    "fastify-plugin": "^4.0.0"
   },
   "devDependencies": {
-    "tap": "^16.1.0",
-    "@istanbuljs/esm-loader-hook": "0.2.0"
+    "@istanbuljs/esm-loader-hook": "0.2.0",
+    "tap": "^16.1.0"
   },
   "tap": {
     "node-arg": [
