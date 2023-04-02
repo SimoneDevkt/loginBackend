@@ -1,8 +1,10 @@
 [build]
-  # This will be run the site build
-  command = "npm run build:functions"
-  # This is the directory is publishing to netlify's CDN
-  # and this is directory of your front of your app
-  # publish = "build"
-  # functions build directory
-  functions = "functions-build"
+  publish = "dist/"
+  command = "npm build"
+
+[build.environment]
+  NODE_VERSION = "14.16.0"
+
+[functions]
+  directory = ".netlify/functions"
+  node_bundler = "esbuild"

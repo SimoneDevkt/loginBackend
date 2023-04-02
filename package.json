@@ -11,7 +11,7 @@
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js",
-    "build:functions": "mkdir -p build/functions && cp -R functions build/"
+    "build": "netlify deploy --prod"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +28,8 @@
   },
   "devDependencies": {
     "@istanbuljs/esm-loader-hook": "0.2.0",
-    "netlify-lambda": "^1.6.3",
+    "netlify-cli": "^12.7.2",
+    "netlify-lambda": "^2.0.15",
     "tap": "^16.1.0",
     "webpack-node-externals": "^1.7.2"
   },

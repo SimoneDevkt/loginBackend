@@ -56,3 +56,6 @@ profile-*
 profile*
 *clinic*
 *flamegraph*
+
+# Local Netlify folder
+.netlify
