@@ -1,24 +1,17 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
+clone this project
 
-This project was bootstrapped with Fastify-CLI.
+Create a mysql db and add this table
+`CREATE TABLE User (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  user VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(150) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
+);`
 
+create .env file based on .env.template file
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm run dev`
-
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm start`
-
-For production mode
-
-### `npm run test`
-
-Run the test cases.
-
-## Learn More
-
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).

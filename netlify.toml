@@ -1,10 +1,7 @@
 [build]
-  publish = "dist/"
-  command = "npm build"
-
-[build.environment]
-  NODE_VERSION = "14.16.0"
+	command = "# no build command"
+	functions = "functions"
+	publish = "public"
 
 [functions]
-  directory = ".netlify/functions"
-  node_bundler = "esbuild"
+    node_bundler = "esbuild"
